@@ -66,9 +66,9 @@ output "demo1" {
 
 ## variables from SHELL env variables
 variable "demo2" {
-  default = null
+  default = "null"
 }
 
-output "demo3" {
+output "demo2" {
   value = var.demo2
 }
