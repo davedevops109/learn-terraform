@@ -1,4 +1,4 @@
-data "aws_ami" "example" {
+data "aws_ami" "centos8" {
   most_recent      = true
   name_regex       = "Centos-8-DevOps-Practice"
   owners           = ["973714476881"]
@@ -6,13 +6,18 @@ data "aws_ami" "example" {
 }
 
 output "ami" {
-  value = data.aws_ami.example
+  value = data.aws_ami.centos8
 }
 
 data "aws_instance" "foo" {
   instance_id = "i-05a301314d37f0096"
 }
 
-output "instance" {
+output "public_ip" {
   value = data.aws_instance.foo.public_ip
+
+}
+
+output "private_ip" {
+  value = "data.aws_instance.foo.private_ip"
 }
