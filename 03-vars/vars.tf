@@ -29,7 +29,7 @@ variable "sample4" {
 }
 
 output "sample4" {
-  value = "var.sample4"
+  value = var.sample4
 }
 
 # list variable type
