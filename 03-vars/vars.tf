@@ -24,7 +24,7 @@ variable "sample3" {
 }
 
 #Default variable type
-variable "sampled" {
+variable "sample4" {
   default = 100
 }
 
