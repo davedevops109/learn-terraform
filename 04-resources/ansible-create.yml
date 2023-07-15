@@ -5,6 +5,6 @@
       amazon.aws.ec2_instance:
         name: "ansible-test"
         instance_type: t3.micro
-        image_id: ami-123456
+        image_id: ami-03265a0778a880afb
         tags:
           Environment: Testing
