@@ -6,5 +6,4 @@
         name: "ansible-test"
         instance_type: t3.micro
         image_id: ami-03265a0778a880afb
-        tags:
-          Environment: Testing
+
