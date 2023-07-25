@@ -20,4 +20,4 @@ module "ec2" {
 }
 
 ## always iterate modules not resources
-## always map the data and use for_each loop..
+## always map the data and use for_each loop
